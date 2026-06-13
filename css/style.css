@@ -1,19 +1,46 @@
+/* ===== Fondo de toda la página ===== */
+body {
+  background-color: #1a1a2e; /* azul oscuro de fondo */
+  font-family: Arial, sans-serif; /* tipografía de toda la página */
+  display: flex; /* permite acomodar los elementos */
+  flex-direction: column; /* los apila uno arriba del otro */
+  align-items: center; /* los centra de lado a lado */
+  padding-top: 60px; /* espacio desde arriba */
+}
+
+/* ===== Título ===== */
 h1 {
   background-color: antiquewhite;
   text-align: center;
   color: aqua;
+  padding: 20px 40px; /* relleno adentro del título */
+  border-radius: 16px; /* esquinas redondeadas */
 }
 
+/* ===== Botón ===== */
 button {
   background-color: hotpink;
   color: white;
   font-size: 20px;
   padding: 15px 30px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
+  border: none; /* saca el borde gris feo */
+  border-radius: 12px; /* esquinas redondeadas */
+  cursor: pointer; /* manito al pasar el mouse */
+  margin-top: 30px; /* separación del título */
+  transition: 0.3s; /* hace el cambio de color SUAVE */
 }
 
+/* ===== Botón cuando pasás el mouse ===== */
 button:hover {
-  background-color: deeppink;
+  background-color: deeppink; /* rosa más oscuro */
+  transform: scale(1.1); /* lo agranda un poquito */
+}
+
+/* ===== Caja del mensaje (resultado) ===== */
+#resultado {
+  margin-top: 30px; /* separación del botón */
+  padding: 20px 40px; /* relleno adentro */
+  border-radius: 16px; /* esquinas redondeadas */
+  min-width: 200px; /* ancho mínimo aunque esté vacío */
+  text-align: center; /* texto centrado */
 }
